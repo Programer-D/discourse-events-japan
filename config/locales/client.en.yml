@@ -81,7 +81,7 @@ en:
         filter: "フィルター"
       going:
         label: "参加"
-        max_reached: "制限人数"
+        max_reached: "満員"
         one_spot_left: "残り1枠"
         x_spots_left: "残り{{spotsLeft}}枠"
 
