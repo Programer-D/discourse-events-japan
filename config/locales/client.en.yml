@@ -40,7 +40,7 @@ en:
         title: "アジェンダ"
         help: "開始時刻の昇順でリストアップ"
       calendar:
-        title: "カレンダー
+        title: "カレンダー"
         help: "カレンダーでイベントリストを見る。"
     add_to_calendar:
       label: "自分のカレンダーに追加"
