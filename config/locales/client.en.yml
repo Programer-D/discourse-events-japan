@@ -16,7 +16,7 @@ en:
       rsvp_enabled: "定員有効化"
       rsvp_enabled_label: "招待"
       going: "参加"
-      going_max: "最大参加者数"
+      going_max: "定員数"
       going_max_label: "{{goingMax}} 人"
       error: "イベントの終了時刻が開始時刻よりも前になっています。"
     category:
