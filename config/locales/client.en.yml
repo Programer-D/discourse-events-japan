@@ -1,89 +1,89 @@
 en:
   js:
     add_event:
-      btn_label: "Add Event"
-      modal_title: Add Event
-      event_start: Start
-      event_end: End
-      event_date: Date
-      event_time: Time
-      event_add: Done
-      event_clear: Clear
-      end_enabled: "Event end"
-      all_day: "All day"
-      timezone: "Timezone"
-      no_timezone: "Select a timezone"
-      rsvp_enabled: "Rsvp enabled"
-      rsvp_enabled_label: "Rsvp"
-      going: "Guests"
-      going_max: "Maximum guests"
-      going_max_label: "{{goingMax}} Guests"
-      error: "Event end should be same as or after event start"
+      btn_label: "イベント追加"
+      modal_title: イベント追加
+      event_start: 開始時刻
+      event_end: 終了時刻
+      event_date: 日付
+      event_time: 時間
+      event_add: 完了
+      event_clear: クリア
+      end_enabled: "時間設定"
+      all_day: "終日"
+      timezone: "タイムゾーン"
+      no_timezone: "タイムゾーン選択"
+      rsvp_enabled: "招待有効化"
+      rsvp_enabled_label: "招待"
+      going: "ゲスト"
+      going_max: "最大ゲスト数"
+      going_max_label: "{{goingMax}} ゲスト"
+      error: "イベントの終了時刻が開始時刻よりも前になっています。"
     category:
       events_setting_heading: "Events"
-      enable_events: "Allow events to be added to topics in this category (overrides site setting)."
-      enable_events_agenda: "Show an agenda topic list in this category (overrides site setting)."
-      enable_events_calendar: "Show a calendar topic list in this category (overrides site setting)."
-      events_min_trust_to_create: "Min trust to create event in this category (overrides site setting)."
-      events_event_label_no_text: "No text on add event buttons in this category (overrides site setting)."
-      require_event: "All topics in this category must have an event."
+      enable_events: "このカテゴリでのイベント設定を許可する。 (サイト設定より優先されます。)."
+      enable_events_agenda: "このカテゴリのアジェンダリストを表示する。 (サイト設定より優先されます。)."
+      enable_events_calendar: "このカテゴリのカレンダートピックリストを表示する。 (サイト設定より優先されます。)."
+      events_min_trust_to_create: "このカテゴリのイベントを作成するための最小限の信頼レベル (サイト設定より優先されます。)."
+      events_event_label_no_text: "このカテゴリのイベント追加ボタンにテキストが表示されない (サイト設定より優先されます。)."
+      require_event: "このカテゴリのトピックはイベントの設定が必須。"
     composer:
       error:
-        event_missing: "Topics in this category must have an event."
+        event_missing: "このカテゴリはイベントの設定が必須です。"
     event_list:
-      title: '{{categoryName}} Events'
-      about: 'Events in your area'
-      no_results: "No upcoming events"
-      create: "Create Event"
+      title: '{{categoryName}} イベント'
+      about: 'あなたの地域のイベント'
+      no_results: "イベントはありません"
+      create: "イベント作成"
     filters:
       agenda:
-        title: "Agenda"
-        help: "List events in ascending chronological order according to the start datetime."
+        title: "アジェンダ"
+        help: "開始時刻の昇順でリストアップ"
       calendar:
-        title: "Calendar"
-        help: "Show events in a calendar"
+        title: "カレンダー
+        help: "カレンダーでイベントリストを見る。"
     add_to_calendar:
-      label: "Add to Calendar"
-      google: "Google Calendar"
-      ics: ".ics File"
-      default_details: "Event details: {{url}}"
+      label: "自分のカレンダーに追加"
+      google: "グーグルカレンダー"
+      ics: ".icsファイル"
+      default_details: "イベント詳細: {{url}}"
     topics:
       none:
-        agenda: "There are no agenda topics."
+        agenda: "イベントのアジェンダはありません"
       bottom:
-        agenda: "There are no more agenda topics."
+        agenda: "アジェンダとなるトピックはありません。"
     events_calendar:
-      today: "Today"
+      today: "今日"
       hidden: "{{count}} more"
-      subscribe: "Subscribe"
+      subscribe: "購読"
       ical: "iCal"
       rss: "RSS"
       subscription:
-        warning: "Never share these links with anyone!"
+        warning: "このリンクは誰とも共有しないでください！"
     user:
       events_calendar:
-        label: "Calendar"
-        first_day_week: "Start week on"
+        label: "カレンダー"
+        first_day_week: "週初め"
 
     webcal_preferences:
       webcal_keys: "Webcal Keys"
       heading: "Webcal API Keys"
       api_key: "Api Key"
-      client_id: "Client ID"
-      generate: "Generate"
-      notice: "Note: The key and client id will be visible only once. Please store them in a safe place before you leave this page."
-      calendar_notice: 'Please go to <a href="%{link}">this page</a> to generate API keys in order to subscribe to the ical feed'
-      calendar_usage: 'Go to the <a href="%{doc}">documentation</a> for instructions on how to use these keys'
+      client_id: "クライアントID"
+      generate: "生成"
+      notice: "Note: キーとクライアントIDはこの一度だけしか表示されません。ページを離れる前にそれらを安全な場所に保管してください。"
+      calendar_notice: '<a href="%{link}">このページ</a>でicalフェードを購読するためのAPIを生成します。'
+      calendar_usage: '<a href="%{doc}">ドキュメント</a>ではこれらのキーの使用方法の説明があります。'
 
     event_rsvp:
       modal:
-        title: "Guests"
-        filter: "Filter"
+        title: "招待"
+        filter: "フィルター"
       going:
-        label: "Going"
-        max_reached: "Booked out"
-        one_spot_left: "1 spot left"
-        x_spots_left: "{{spotsLeft}} spots left"
+        label: "参加"
+        max_reached: "制限人数"
+        one_spot_left: "残り1枠"
+        x_spots_left: "残り{{spotsLeft}}枠"
 
     site_settings:
-      events_timezone_default_placeholder: "Select a Timezone"
+      events_timezone_default_placeholder: "タイムゾーン選択"
