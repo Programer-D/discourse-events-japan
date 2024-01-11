@@ -1,28 +1,31 @@
 <div class="event-controls">
   <div class="control">
     <input
-      type="checkbox" 
-      checked={{endEnabled}} 
+      type="checkbox"
+      checked={{endEnabled}}
       onclick={{action "toggleEndEnabled" value="target.checked"}} />
     <span>{{i18n 'add_event.end_enabled'}}</span>
   </div>
-  
+
   <div class="control">
-    <input 
-      type="checkbox" 
-      checked={{allDay}}  
+    <input
+      type="checkbox"
+      checked={{allDay}}
       onclick={{action "toggleAllDay" value="target.checked"}} />
     <span>{{i18n 'add_event.all_day'}}</span>
   </div>
-  
+
   {{#unless allDay}}
     <div class="control full-width">
       {{combo-box
         value=timezone
-        valueAttribute="value"
+        valueProperty="value"
+        onChange=(action (mut timezone))
         content=timezones
-        none='add_event.no_timezone'
-        filterable=true}}
+        options=(hash
+          filterable=true
+          none="add_event.no_timezone"
+        )}}
     </div>
   {{/unless}}
 </div>
@@ -32,20 +35,20 @@
     <span class="sub-title">
       {{i18n "add_event.event_start"}}
     </span>
-    
+
     {{input-tip validation=startDateTimeValidation}}
-    
+
     <div class="date-time-set">
       <div class="date-area">
         <label class="input-group-label">
           {{i18n "add_event.event_date"}}
         </label>
-        
+
         {{events-date-picker
           value=startDate
           containerId="date-container-start"}}
       </div>
-      
+
       {{#unless allDay}}
         <div class="time-area">
           <label class="input-group-label">
@@ -55,7 +58,7 @@
         </div>
       {{/unless}}
     </div>
-    
+
     <div id="date-container-start"/>
   </div>
 
@@ -63,20 +66,20 @@
     <span class="sub-title">
       {{i18n "add_event.event_end"}}
     </span>
-    
+
     {{input-tip validation=scheduleDateTimeValidation}}
-	  
+
     <div class="date-time-set">
       <div class="date-area">
         <label class="input-group-label">
           {{i18n "add_event.event_date"}}
         </label>
-        
+
         {{events-date-picker
           value=endDate
           containerId="date-container-end"}}
       </div>
-      
+
       {{#unless allDay}}
         <div class="time-area">
           <label class="input-group-label">
@@ -86,7 +89,7 @@
         </div>
       {{/unless}}
     </div>
-    
+
     <div id="date-container-end"/>
   </div>
 </div>
@@ -97,7 +100,7 @@
       {{input type='checkbox' checked=rsvpEnabled}}
       <span>{{i18n 'add_event.rsvp_enabled'}}</span>
     </div>
-    
+
     {{#if rsvpEnabled}}
       <div class="rsvp-container">
         <div class="control">

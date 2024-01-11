@@ -2,7 +2,7 @@
   align-items: flex-start;
 
   &.event-add-no-text {
-    &>div:last-of-type {
+    & > div:last-of-type {
       margin-right: 0;
     }
   }
@@ -15,8 +15,8 @@
     }
   }
 
-  .add-event, .add-event + button {
-
+  .add-event,
+  .add-event + button {
   }
 }
 
@@ -31,7 +31,9 @@
   }
 }
 
-#reply-control .reply-area:not(.with-tags) .title-and-category.show-event-controls {
+#reply-control
+  .reply-area:not(.with-tags)
+  .title-and-category.show-event-controls {
   .category-input {
     margin-right: 5px;
   }
@@ -39,26 +41,8 @@
 
 .composer-controls-event .event-label {
   display: flex;
-
-  button {
-    padding: 5px 10px;
-    min-height: 30px;
-    min-width: 35px;
-    text-align: left;
-    margin-right: 5px;
-    margin-bottom: 5px;
-
-    &.no-text {
-      max-height: 29px;
-      text-align: center;
-
-      .fa {
-        margin-right: 0;
-      }
-    }
-  }
 }
 
 .composer-controls-event .btn:not(:hover) {
-  background: $secondary;
+  background: var(--secondary);
 }
